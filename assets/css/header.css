@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+header {
+    background-color: rgba(51, 51, 51, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 1.5em;
+    text-align: center;
+    margin: 0.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li.logo {
+    flex-grow: 1;
+}
+
+nav ul li.logo img {
+    max-height: 50px;
+}
+
+nav ul li.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+nav ul li a, nav ul li button {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav ul li a img.icon, nav ul li button img.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li.logo {
+        align-self: center;
+    }
+
+    nav ul li.right {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    nav ul li.right a, nav ul li.right button {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    header {
+        padding: 1em;
+    }
+}
