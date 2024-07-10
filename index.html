@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/header.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/css/glide.theme.min.css">
     <title>La Cabane Parias</title>
 </head>
 <body>
@@ -13,7 +15,7 @@
         <ul>
             <li class="logo">
                 <a href="index.html">
-                    <img src="assets/img/logo-light.png" alt="La Cabane Parias Logo">
+                    <img src="assets/img/icons/logo-light.png" alt="La Cabane Parias Logo">
                 </a>
             </li>
             <li class="right">
@@ -22,8 +24,17 @@
                 <a href="callto:0645308476"><img class="icon" src="assets/img/svg/phone.svg" alt="Phone icon"> 06 45 30 84 76</a>
                 <button id="theme-toggle"><img class="icon" id="theme-icon" src="assets/img/svg/dark.svg" alt="Moon icon"></button>
             </li>
+            <li class="burger-menu">
+                <button id="burger-menu-toggle"><img class="icon" src="assets/img/svg/burger.svg" alt="Menu icon"></button>
+                <button id="theme-toggle-mobile"><img class="icon" id="theme-icon-mobile" src="assets/img/svg/dark.svg" alt="Moon icon"></button>
+            </li>
         </ul>
     </nav>
+    <div id="mobile-menu" class="mobile-menu">
+        <a href="menu.html"><img class="icon" src="assets/img/svg/menu.svg" alt="Menu icon"> MENU</a>
+        <a href="contact.html"><img class="icon" src="assets/img/svg/contact.svg" alt="Contact icon"> CONTACT</a>
+        <a href="callto:0645308476"><img class="icon" src="assets/img/svg/phone.svg" alt="Phone icon"> 06 45 30 84 76</a>
+    </div>
 </header>
 <main>
     <section class="intro">
@@ -50,10 +61,32 @@
             <p>Pour toute question ou réservation, n'hésitez pas à nous contacter. Nous serons ravis de vous accueillir.</p>
         </div>
     </section>
+    <section class="hours-section">
+        <h2>NOS HORAIRES</h2>
+        <p>Ouvert tous les jours sauf lundi et jours de pluie</p>
+        <p>De Mai à Octobre : 15h00 – 20h00</p>
+        <p>Juillet et Août : 11h00 – 23h00</p>
+    </section>
+    <section class="instagram-carousel">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="assets/img/content/1.jpg" alt="Photo 1"></li>
+                    <li class="glide__slide"><img src="assets/img/content/2.jpg" alt="Photo 2"></li>
+                    <li class="glide__slide"><img src="assets/img/content/3.jpg" alt="Photo 3"></li>
+                    <li class="glide__slide"><img src="assets/img/content/4.jpg" alt="Photo 4"></li>
+                    <li class="glide__slide"><img src="assets/img/content/5.jpg" alt="Photo 5"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="elfsight-app-8053dd37-775a-44d1-8a61-bd44a6cadfbb" data-elfsight-app-lazy></div>
 </main>
 <footer>
     <p>&copy; 2024 La Cabane Parias. Tous droits réservés.</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/glide.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 </body>
 </html>
