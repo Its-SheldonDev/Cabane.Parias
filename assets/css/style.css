@@ -159,3 +159,116 @@ body.light-theme nav ul li a img.icon, body.light-theme nav ul li button img.ico
 body.light-theme .intro h1, body.light-theme .intro p, body.light-theme .intro .reserve-button {
     color: white; /* Le texte reste blanc en mode clair */
 }
+
+.highlight {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.highlight h2 {
+    font-size: 2.5em;
+    color: #5577b7; /* Couleur fixe */
+}
+
+.highlight h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.highlight-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligne l'image avec le haut du texte */
+    flex-wrap: wrap;
+}
+
+.highlight-text {
+    flex: 1;
+    padding: 20px;
+    font-size: 1em;
+    text-align: left;
+}
+
+.highlight-image {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.highlight-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #5577b7;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.highlight-button:hover {
+    background-color: #3d5583;
+}
+
+.highlight-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1em;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+body.light-theme .highlight h3,
+body.light-theme .highlight-text {
+    color: #000; /* Texte noir en light theme */
+}
+
+body.light-theme .highlight-link {
+    color: #5577b7;
+    border-bottom-color: #5577b7;
+}
+
+body.light-theme .highlight-link:hover {
+    color: #3d5583;
+    border-bottom-color: #3d5583;
+}
+
+body.dark-theme .highlight h3,
+body.dark-theme .highlight-text {
+    color: #fff; /* Texte blanc en dark theme */
+}
+
+body.dark-theme .highlight-link {
+    color: #D4A373;
+    border-bottom-color: #D4A373;
+}
+
+body.dark-theme .highlight-link:hover {
+    color: #B5838D;
+    border-bottom-color: #B5838D;
+}
+
+@media (max-width: 768px) {
+    .highlight-content {
+        flex-direction: column;
+    }
+
+    .highlight-image {
+        align-items: center;
+    }
+
+    .highlight-image img {
+        width: 90%;
+    }
+}
