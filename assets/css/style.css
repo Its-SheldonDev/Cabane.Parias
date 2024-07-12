@@ -189,7 +189,7 @@ body.light-theme .intro h1, body.light-theme .intro p, body.light-theme .intro .
     flex: 1;
     padding: 20px;
     font-size: 1em;
-    text-align: left;
+    text-align: center;
 }
 
 .highlight-image {
